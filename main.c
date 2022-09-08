@@ -66,7 +66,7 @@ int main(void)
 			value = _getenv("PATH");
 			head = linkpath(value);
 			pathname = _which(arv[0], head);
-			f = designer(arv);
+			f = buildcheck(arv);
 			if (f)
 			{
 				free(buff);

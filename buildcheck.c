@@ -1,14 +1,14 @@
 #include "shell.h"
 
 /**
-* designer - checks if the command is a buildin
+* buildccheck - checks if the command is a buildin
 * @arv: array of arguments
 * Return: pointer to function that takes arv and returns void
 */
-void(*designer(char **arv))(char **arv)
+void(*buildcheck(char **arv))(char **arv)
 {
 	int i, j;
-	design T[] = {
+	builtin T[] = {
 		{"exit", exitt},
 		{"env", env},
 		{"setenv", _setenv},

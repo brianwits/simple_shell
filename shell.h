@@ -47,13 +47,13 @@ char *_which(char *filename, list_path *head);
  * @name: design command
  * @func: execute the design command
  */
-typedef struct design
+typedef struct builtin
 {
 	char *name;
 	void (*func)(char **);
-} design;
+} builtin;
 
-void(*designer(char **arv))(char **arv);
+void(*buildcheck(char **arv))(char **arv);
 int _atoi(char *s);
 void exitt(char **arv);
 void env(char **arv);
